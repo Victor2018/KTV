@@ -1,0 +1,67 @@
+package com.victor.ktv.dialog;
+
+import android.annotation.SuppressLint;
+import android.os.Bundle;
+import android.view.Gravity;
+import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
+
+import com.victor.ktv.R;
+import com.victor.ktv.util.DensityUtil;
+
+
+/*
+ * -----------------------------------------------------------------
+ * Copyright (C) 2018-2028, by Victor, All rights reserved.
+ * -----------------------------------------------------------------
+ * File: SongsOrderedDialog.java
+ * Author: Victor
+ * Date: 2020/2/5 14:05
+ * Description:
+ * -----------------------------------------------------------------
+ */
+
+@SuppressLint("ValidFragment")
+public class CtrlDialog extends AbsDialogFragment implements View.OnClickListener {
+
+
+
+    @Override
+    protected int bindContentView() {
+        return R.layout.dialog_ctrl;
+    }
+
+
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+    }
+
+    @Override
+    protected void handleWindow(Window window) {
+        window.setGravity(Gravity.BOTTOM | Gravity.RIGHT);
+    }
+
+    @Override
+    public void handleLayoutParams(WindowManager.LayoutParams wlp) {
+        wlp.width = DensityUtil.getScreenWidth(getActivity()) * 5 / 10;
+        wlp.height = DensityUtil.getScreenHeight(getActivity()) * 7 / 10;
+        wlp.windowAnimations = R.style.RightDialogAnimShow;
+    }
+
+
+    @Override
+    protected void initView(View rootView) {
+        super.initView(rootView);
+    }
+
+
+
+
+    @Override
+    public void onClick(View v) {
+        int id = v.getId();
+    }
+
+}

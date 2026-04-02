@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_entertainment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/dp_40"
+    android:gravity="center_vertical"
+    tools:context=".MainActivity">
+
+
+    <FrameLayout
+        android:id="@+id/fl_theme"
+        android:layout_width="@dimen/dp_268"
+        android:layout_height="@dimen/dp_480"
+        android:layout_marginLeft="@dimen/dp_22">
+
+        <ImageView
+            android:id="@+id/iv_theme"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/img_theme"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_30"
+            android:gravity="center"
+            android:textSize="@dimen/dp_28"
+            android:textColor="@color/white"
+            android:text="个性主题"/>
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/fl_record_share"
+        android:layout_width="@dimen/dp_200"
+        android:layout_height="@dimen/dp_234"
+        android:layout_marginLeft="@dimen/dp_14"
+        android:layout_toRightOf="@+id/fl_theme"
+        android:layout_alignTop="@+id/fl_theme">
+
+        <ImageView
+            android:id="@+id/iv_record_share"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/img_record_share"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_30"
+            android:gravity="center"
+            android:textSize="@dimen/dp_28"
+            android:textColor="@color/white"
+            android:text="录音分享"/>
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/fl_live"
+        android:layout_width="@dimen/dp_200"
+        android:layout_height="@dimen/dp_234"
+        android:layout_marginLeft="@dimen/dp_14"
+        android:layout_toRightOf="@+id/fl_theme"
+        android:layout_below="@+id/fl_record_share"
+        android:layout_marginTop="@dimen/dp_12">
+
+        <ImageView
+            android:id="@+id/iv_live"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/img_live"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_30"
+            android:gravity="center"
+            android:textSize="@dimen/dp_28"
+            android:textColor="@color/white"
+            android:text="直播"/>
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/fl_skewer"
+        android:layout_width="@dimen/dp_200"
+        android:layout_height="@dimen/dp_234"
+        android:layout_marginLeft="@dimen/dp_14"
+        android:layout_toRightOf="@+id/fl_record_share"
+        android:layout_alignTop="@+id/fl_theme">
+
+        <ImageView
+            android:id="@+id/iv_skewer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/img_skewer"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_30"
+            android:gravity="center"
+            android:textSize="@dimen/dp_28"
+            android:textColor="@color/white"
+            android:text="录音分享"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_xiaoai"
+        android:layout_width="@dimen/dp_200"
+        android:layout_height="@dimen/dp_234"
+        android:layout_marginLeft="@dimen/dp_14"
+        android:layout_toRightOf="@+id/fl_live"
+        android:layout_below="@+id/fl_record_share"
+        android:layout_marginTop="@dimen/dp_12">
+
+        <ImageView
+            android:id="@+id/iv_xiaoai"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/img_xiaoai"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_30"
+            android:gravity="center"
+            android:textSize="@dimen/dp_28"
+            android:textColor="@color/white"
+            android:text="直播"/>
+    </FrameLayout>
+
+</RelativeLayout>

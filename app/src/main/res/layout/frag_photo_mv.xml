@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@mipmap/img_recommend_background"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/ll_secondary_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_60"
+        android:layout_below="@+id/tv_play_sing"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/iv_secondary_home"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:layout_below="@+id/tv_play_sing"
+            android:padding="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:src="@mipmap/ic_recommend_home"/>
+
+        <TextView
+            android:id="@+id/tv_secondary_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_E6E6E6"
+            android:textSize="@dimen/dp_26"
+            android:text="推荐/照片MV"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/ll_secondary_title"
+        android:layout_above="@+id/tv_back"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_marginLeft="@dimen/dp_65"
+        android:layout_marginRight="@dimen/dp_65"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:background="@mipmap/img_photo_mv_bg">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_120"
+            android:layout_marginTop="@dimen/dp_70"
+            android:textSize="@dimen/dp_86"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="照片MV"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginLeft="@dimen/dp_70"
+            android:textSize="@dimen/dp_66"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="照片秒变大片"/>
+
+        <ImageView
+            android:id="@+id/iv_qr"
+            android:layout_width="@dimen/dp_230"
+            android:layout_height="@dimen/dp_230"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_165"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/img_recommend_back"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_20"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp_28"
+        android:gravity="center"
+        android:text="返回"/>
+</RelativeLayout>

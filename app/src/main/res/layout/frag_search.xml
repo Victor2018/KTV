@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:background="@mipmap/img_recommend_background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_secondary_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_70"
+        android:layout_below="@+id/tv_play_sing"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/iv_secondary_home"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:layout_below="@+id/tv_play_sing"
+            android:padding="@dimen/dp_10"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:src="@mipmap/ic_recommend_home"/>
+
+        <TextView
+            android:id="@+id/tv_secondary_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_E6E6E6"
+            android:textSize="@dimen/dp_26"
+            android:text="搜索"/>
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_toRightOf="@+id/ll_secondary_title"
+        android:layout_alignTop="@+id/ll_secondary_title"
+        app:tabBackground="@drawable/singer_tab_background"
+        app:tabGravity="fill"
+        app:tabMinWidth="@dimen/dp_154"
+        app:tabIndicatorColor="@color/color_FF1493"
+        app:tabIndicatorHeight="@dimen/dp_0"
+        app:tabTextAppearance="@style/TabLayoutTextSize"
+        app:tabTextColor="@color/white"
+        app:tabSelectedTextColor="@color/white"
+        app:tabMode="scrollable"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tabs"
+        android:layout_above="@+id/ll_bottom">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/iv_search_empty"
+            android:layout_width="@dimen/dp_88"
+            android:layout_height="@dimen/dp_88"
+            android:layout_marginLeft="@dimen/dp_350"
+            android:layout_above="@+id/tv_search_empty_tip"
+            android:src="@mipmap/img_search_result_empty"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/tv_search_empty_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_300"
+            android:layout_marginTop="@dimen/dp_30"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp_22"
+            android:visibility="gone"
+            android:text="未搜索到当前歌曲"/>
+    </RelativeLayout>
+
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="@dimen/dp_430"
+        android:layout_height="@dimen/dp_54"
+        android:paddingLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_marginRight="@dimen/dp_20"
+        android:layout_below="@+id/tabs"
+        android:layout_alignParentRight="true"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:singleLine="true"
+        android:textSize="@dimen/dp_18"
+        android:textColor="@color/color_030303"
+        android:background="@drawable/bg_et_search"/>
+
+    <TextView
+        android:id="@+id/tv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/img_recommend_back"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:layout_marginRight="@dimen/dp_20"
+        android:textColor="@color/white"
+        android:textSize="@dimen/dp_28"
+        android:gravity="center"
+        android:text="返回"/>
+</RelativeLayout>

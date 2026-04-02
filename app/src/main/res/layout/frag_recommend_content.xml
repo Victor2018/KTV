@@ -1,0 +1,182 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:background="@mipmap/img_recommend_background">
+
+    <com.victor.ktv.widget.BannerLayout
+        android:id="@+id/rl_banner"
+        android:layout_width="@dimen/dp_542"
+        android:layout_height="@dimen/dp_292"
+        app:autoPlayDuration="4000"
+        app:indicatorPosition="centerBottom"
+        app:indicatorShape="oval"
+        app:indicatorSpace="@dimen/dp_10"
+        app:isAutoPlay="true"
+        app:scrollDuration="600"
+        app:selectedIndicatorColor="@color/color_C75AD1"
+        app:selectedIndicatorHeight="@dimen/dp_10"
+        app:selectedIndicatorWidth="@dimen/dp_10"
+        app:unSelectedIndicatorColor="@color/color_FFFBF0"
+        app:unSelectedIndicatorHeight="@dimen/dp_10"
+        app:unSelectedIndicatorWidth="@dimen/dp_10"/>
+
+    <ImageView
+        android:id="@+id/iv_dp"
+        android:layout_width="@dimen/dp_230"
+        android:layout_height="@dimen/dp_290"
+        android:layout_toRightOf="@+id/rl_banner"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:background="@mipmap/img_dp"/>
+
+    <ImageView
+        android:id="@+id/iv_hot_song_list"
+        android:layout_width="@dimen/dp_230"
+        android:layout_height="@dimen/dp_290"
+        android:layout_toRightOf="@+id/iv_dp"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:src="@mipmap/img_hot_song_list"/>
+
+    <FrameLayout
+        android:id="@+id/fl_singer"
+        android:layout_width="@dimen/dp_160"
+        android:layout_height="@dimen/dp_172"
+        android:layout_below="@+id/rl_banner"
+        android:layout_marginTop="@dimen/dp_12">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/img_singer"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:gravity="center"
+            android:textSize="@dimen/dp_28"
+            android:textColor="@color/white"
+            android:text="歌星"/>
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/fl_song_title"
+        android:layout_width="@dimen/dp_160"
+        android:layout_height="@dimen/dp_172"
+        android:layout_below="@+id/rl_banner"
+        android:layout_toRightOf="@+id/fl_singer"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_12">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/img_song_title"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:gravity="center"
+            android:textSize="@dimen/dp_28"
+            android:textColor="@color/white"
+            android:text="歌名"/>
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/fl_exclusive_song"
+        android:layout_width="@dimen/dp_160"
+        android:layout_height="@dimen/dp_172"
+        android:layout_below="@+id/rl_banner"
+        android:layout_toRightOf="@+id/fl_song_title"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_12">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/img_exclusive_song"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:gravity="center"
+            android:textSize="@dimen/dp_28"
+            android:textColor="@color/white"
+            android:text="专属歌曲"/>
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/fl_daily_hot_song"
+        android:layout_width="@dimen/dp_160"
+        android:layout_height="@dimen/dp_172"
+        android:layout_below="@+id/rl_banner"
+        android:layout_toRightOf="@+id/fl_exclusive_song"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_12">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/img_daily_hot_song"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:gravity="center"
+            android:textSize="@dimen/dp_28"
+            android:textColor="@color/white"
+            android:text="每日热歌"/>
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/fl_3d_projection"
+        android:layout_width="@dimen/dp_160"
+        android:layout_height="@dimen/dp_172"
+        android:layout_below="@+id/rl_banner"
+        android:layout_toRightOf="@+id/fl_daily_hot_song"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_12">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/img_3d_projection"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:gravity="center"
+            android:textSize="@dimen/dp_28"
+            android:textColor="@color/white"
+            android:text="3D投影"/>
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/fl_photo_mv"
+        android:layout_width="@dimen/dp_160"
+        android:layout_height="@dimen/dp_172"
+        android:layout_below="@+id/rl_banner"
+        android:layout_toRightOf="@+id/fl_3d_projection"
+        android:layout_marginLeft="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_12">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/img_photo_mv"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_20"
+            android:gravity="center"
+            android:textSize="@dimen/dp_28"
+            android:textColor="@color/white"
+            android:text="照片MV"/>
+    </FrameLayout>
+
+
+</RelativeLayout>
+

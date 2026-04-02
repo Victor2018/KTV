@@ -1,0 +1,7 @@
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/bg_atmosphere_rbtn_normal"
+        android:state_checked="false" />
+    <item android:drawable="@drawable/bg_atmosphere_rbtn_checked"
+        android:state_checked="true" />
+</selector>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_entertainment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/dp_40"
+    android:gravity="center_vertical"
+    tools:context=".MainActivity">
+
+
+    <FrameLayout
+        android:id="@+id/fl_special_offer"
+        android:layout_width="@dimen/dp_200"
+        android:layout_height="@dimen/dp_234"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/iv_special_offer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/img_special_offer"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_30"
+            android:gravity="center"
+            android:textSize="@dimen/dp_28"
+            android:textColor="@color/white"
+            android:text="特惠"/>
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/fl_weather"
+        android:layout_width="@dimen/dp_408"
+        android:layout_height="@dimen/dp_234"
+        android:layout_toRightOf="@+id/fl_special_offer"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/iv_weather"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/img_weather"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_30"
+            android:gravity="center"
+            android:textSize="@dimen/dp_28"
+            android:textColor="@color/white"
+            android:text="天气"/>
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/fl_use_intruction"
+        android:layout_width="@dimen/dp_200"
+        android:layout_height="@dimen/dp_234"
+        android:layout_toRightOf="@+id/fl_weather"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/iv_use_intruction"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/img_use_intruction"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_30"
+            android:gravity="center"
+            android:textSize="@dimen/dp_28"
+            android:textColor="@color/white"
+            android:text="使用说明"/>
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/fl_consumer_details"
+        android:layout_width="@dimen/dp_200"
+        android:layout_height="@dimen/dp_234"
+        android:layout_below="@+id/fl_special_offer"
+        android:layout_marginLeft="@dimen/dp_18"
+        android:layout_marginTop="@dimen/dp_8"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/iv_consumer_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/img_consumer_details"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_30"
+            android:gravity="center"
+            android:textSize="@dimen/dp_28"
+            android:textColor="@color/white"
+            android:text="消费明细"/>
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/fl_my_connection"
+        android:layout_width="@dimen/dp_200"
+        android:layout_height="@dimen/dp_234"
+        android:layout_toRightOf="@+id/fl_consumer_details"
+        android:layout_alignTop="@+id/fl_consumer_details"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/iv_my_connection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/img_my_connection"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_30"
+            android:gravity="center"
+            android:textSize="@dimen/dp_28"
+            android:textColor="@color/white"
+            android:text="我的收藏"/>
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/fl_situational_sound_effects"
+        android:layout_width="@dimen/dp_200"
+        android:layout_height="@dimen/dp_234"
+        android:layout_toRightOf="@+id/fl_my_connection"
+        android:layout_alignTop="@+id/fl_consumer_details"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/iv_situational_sound_effects"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/img_situational_sound_effects"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_30"
+            android:gravity="center"
+            android:textSize="@dimen/dp_28"
+            android:textColor="@color/white"
+            android:text="情景音效"/>
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/fl_disconnect_phone"
+        android:layout_width="@dimen/dp_200"
+        android:layout_height="@dimen/dp_234"
+        android:layout_toRightOf="@+id/fl_situational_sound_effects"
+        android:layout_alignTop="@+id/fl_consumer_details"
+        android:layout_marginLeft="@dimen/dp_8"
+        android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/iv_disconnect_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/img_disconnect_phone"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_30"
+            android:gravity="center"
+            android:textSize="@dimen/dp_28"
+            android:textColor="@color/white"
+            android:text="断开手机连接"/>
+    </FrameLayout>
+
+</RelativeLayout>

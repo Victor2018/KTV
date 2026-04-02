@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_sing"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/dp_40"
+    android:gravity="center_vertical"
+    tools:context=".MainActivity">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="horizontal">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            tools:context=".MainActivity">
+            <FrameLayout
+                android:id="@+id/fl_singer"
+                android:layout_width="@dimen/dp_268"
+                android:layout_height="@dimen/dp_480"
+                android:layout_marginLeft="@dimen/dp_22">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/img_theme"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:gravity="center"
+                    android:textSize="@dimen/dp_28"
+                    android:textColor="@color/white"
+                    android:text="歌星点唱"/>
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/fl_song_title"
+                android:layout_width="@dimen/dp_200"
+                android:layout_height="@dimen/dp_234"
+                android:layout_marginLeft="@dimen/dp_14"
+                android:layout_toRightOf="@+id/fl_singer"
+                android:layout_alignTop="@+id/fl_singer">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/img_record_share"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:gravity="center"
+                    android:textSize="@dimen/dp_28"
+                    android:textColor="@color/white"
+                    android:text="歌名点歌"/>
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/fl_mls_hot"
+                android:layout_width="@dimen/dp_414"
+                android:layout_height="@dimen/dp_234"
+                android:layout_marginLeft="@dimen/dp_14"
+                android:layout_toRightOf="@+id/fl_singer"
+                android:layout_below="@+id/fl_song_title"
+                android:layout_marginTop="@dimen/dp_12">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/img_live"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:gravity="center"
+                    android:textSize="@dimen/dp_28"
+                    android:textColor="@color/white"
+                    android:text="MLS热歌榜"/>
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/fl_mcgaar_ranking"
+                android:layout_width="@dimen/dp_200"
+                android:layout_height="@dimen/dp_234"
+                android:layout_marginLeft="@dimen/dp_14"
+                android:layout_toRightOf="@+id/fl_song_title"
+                android:layout_alignTop="@+id/fl_singer">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/img_skewer"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:gravity="center"
+                    android:textSize="@dimen/dp_28"
+                    android:textColor="@color/white"
+                    android:text="麦嘎排行"/>
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/fl_new_sing"
+                android:layout_width="@dimen/dp_200"
+                android:layout_height="@dimen/dp_234"
+                android:layout_marginLeft="@dimen/dp_14"
+                android:layout_toRightOf="@+id/fl_mcgaar_ranking"
+                android:layout_alignTop="@+id/fl_singer">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/img_xiaoai"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:gravity="center"
+                    android:textSize="@dimen/dp_28"
+                    android:textColor="@color/white"
+                    android:text="新歌榜"/>
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/fl_love_song_duet"
+                android:layout_width="@dimen/dp_200"
+                android:layout_height="@dimen/dp_234"
+                android:layout_marginLeft="@dimen/dp_14"
+                android:layout_toRightOf="@+id/fl_new_sing"
+                android:layout_alignTop="@+id/fl_singer">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/img_xiaoai"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:gravity="center"
+                    android:textSize="@dimen/dp_28"
+                    android:textColor="@color/white"
+                    android:text="情歌对唱"/>
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/fl_category"
+                android:layout_width="@dimen/dp_200"
+                android:layout_height="@dimen/dp_234"
+                android:layout_marginLeft="@dimen/dp_14"
+                android:layout_toRightOf="@+id/fl_mls_hot"
+                android:layout_below="@+id/fl_song_title"
+                android:layout_marginTop="@dimen/dp_12">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/img_xiaoai"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:gravity="center"
+                    android:textSize="@dimen/dp_28"
+                    android:textColor="@color/white"
+                    android:text="分类点歌"/>
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/fl_original_vocal_chart"
+                android:layout_width="@dimen/dp_200"
+                android:layout_height="@dimen/dp_234"
+                android:layout_marginLeft="@dimen/dp_14"
+                android:layout_toRightOf="@+id/fl_category"
+                android:layout_below="@+id/fl_song_title"
+                android:layout_marginTop="@dimen/dp_12">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/img_xiaoai"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:gravity="center"
+                    android:textSize="@dimen/dp_28"
+                    android:textColor="@color/white"
+                    android:text="原唱音乐榜"/>
+            </FrameLayout>
+
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>

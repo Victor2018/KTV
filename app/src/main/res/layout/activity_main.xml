@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/img_background"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/main_left_category"/>
+
+    <include layout="@layout/main_content"/>
+
+    <include
+        layout="@layout/main_right_action"
+        android:id="@+id/ll_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/dp_34"
+        android:layout_marginRight="@dimen/dp_32"
+        android:orientation="horizontal"
+        android:gravity="center"/>
+
+    <include layout="@layout/main_bottom_action"/>
+
+    <TextView
+        android:id="@+id/tv_play_sing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/ll_left_category"
+        android:layout_marginTop="@dimen/dp_20"
+        android:paddingLeft="@dimen/dp_22"
+        android:textColor="@color/color_E6E6E6"
+        android:textSize="@dimen/dp_26"
+        android:text="正在播放：十年 刘若英"/>
+</RelativeLayout>

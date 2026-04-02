@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_entertainment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/dp_40"
+    android:gravity="center_vertical"
+    tools:context=".MainActivity">
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <FrameLayout
+                android:id="@+id/fl_bill"
+                android:layout_width="@dimen/dp_268"
+                android:layout_height="@dimen/dp_480"
+                android:layout_marginLeft="@dimen/dp_22"
+                android:background="@mipmap/img_bill_bg">
+
+                <ImageView
+                    android:id="@+id/iv_bill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/ic_bill"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_100"
+                    android:gravity="center"
+                    android:textSize="@dimen/dp_28"
+                    android:textColor="@color/white"
+                    android:text="账单"/>
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/fl_package"
+                android:layout_width="@dimen/dp_200"
+                android:layout_height="@dimen/dp_234"
+                android:layout_toRightOf="@+id/fl_bill"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:background="@mipmap/img_package_bg">
+
+                <ImageView
+                    android:id="@+id/iv_package"
+                    android:layout_width="@dimen/dp_78"
+                    android:layout_height="@dimen/dp_78"
+                    android:layout_marginBottom="@dimen/dp_50"
+                    android:layout_gravity="center|bottom"
+                    android:src="@mipmap/ic_package"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:gravity="center"
+                    android:textSize="@dimen/dp_28"
+                    android:textColor="@color/white"
+                    android:text="套餐"/>
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/fl_drink"
+                android:layout_width="@dimen/dp_200"
+                android:layout_height="@dimen/dp_234"
+                android:layout_toRightOf="@+id/fl_bill"
+                android:layout_below="@+id/fl_package"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@mipmap/img_drink_bg">
+
+                <ImageView
+                    android:id="@+id/iv_drink"
+                    android:layout_width="@dimen/dp_78"
+                    android:layout_height="@dimen/dp_78"
+                    android:layout_marginBottom="@dimen/dp_50"
+                    android:layout_gravity="center|bottom"
+                    android:src="@mipmap/ic_drink_frag_drink"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:gravity="center"
+                    android:textSize="@dimen/dp_28"
+                    android:textColor="@color/white"
+                    android:text="酒水"/>
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/fl_tea"
+                android:layout_width="@dimen/dp_200"
+                android:layout_height="@dimen/dp_234"
+                android:layout_toRightOf="@+id/fl_package"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:background="@mipmap/img_tea_bg">
+
+                <ImageView
+                    android:id="@+id/iv_tea"
+                    android:layout_width="@dimen/dp_78"
+                    android:layout_height="@dimen/dp_78"
+                    android:layout_marginBottom="@dimen/dp_50"
+                    android:layout_gravity="center|bottom"
+                    android:src="@mipmap/ic_tea"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:gravity="center"
+                    android:textSize="@dimen/dp_28"
+                    android:textColor="@color/white"
+                    android:text="茶水"/>
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/fl_snack"
+                android:layout_width="@dimen/dp_200"
+                android:layout_height="@dimen/dp_234"
+                android:layout_toRightOf="@+id/fl_tea"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:background="@mipmap/img_snack_bg">
+
+                <ImageView
+                    android:id="@+id/iv_snack"
+                    android:layout_width="@dimen/dp_78"
+                    android:layout_height="@dimen/dp_78"
+                    android:layout_marginBottom="@dimen/dp_50"
+                    android:layout_gravity="center|bottom"
+                    android:src="@mipmap/ic_snack"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:gravity="center"
+                    android:textSize="@dimen/dp_28"
+                    android:textColor="@color/white"
+                    android:text="小吃"/>
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/fl_beer"
+                android:layout_width="@dimen/dp_200"
+                android:layout_height="@dimen/dp_234"
+                android:layout_toRightOf="@+id/fl_snack"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:background="@mipmap/img_beer_bg">
+
+                <ImageView
+                    android:id="@+id/iv_beer"
+                    android:layout_width="@dimen/dp_78"
+                    android:layout_height="@dimen/dp_78"
+                    android:layout_marginBottom="@dimen/dp_50"
+                    android:layout_gravity="center|bottom"
+                    android:src="@mipmap/ic_beer"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:gravity="center"
+                    android:textSize="@dimen/dp_28"
+                    android:textColor="@color/white"
+                    android:text="啤酒"/>
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/fl_cigarette"
+                android:layout_width="@dimen/dp_200"
+                android:layout_height="@dimen/dp_234"
+                android:layout_toRightOf="@+id/fl_drink"
+                android:layout_below="@+id/fl_tea"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@mipmap/img_cigarette_bg">
+
+                <ImageView
+                    android:id="@+id/iv_cigarette"
+                    android:layout_width="@dimen/dp_78"
+                    android:layout_height="@dimen/dp_78"
+                    android:layout_marginBottom="@dimen/dp_50"
+                    android:layout_gravity="center|bottom"
+                    android:src="@mipmap/ic_cigarette"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:gravity="center"
+                    android:textSize="@dimen/dp_28"
+                    android:textColor="@color/white"
+                    android:text="香烟"/>
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/fl_lochi"
+                android:layout_width="@dimen/dp_200"
+                android:layout_height="@dimen/dp_234"
+                android:layout_toRightOf="@+id/fl_cigarette"
+                android:layout_below="@+id/fl_tea"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@mipmap/img_lochi_bg">
+
+                <ImageView
+                    android:id="@+id/iv_lochi"
+                    android:layout_width="@dimen/dp_78"
+                    android:layout_height="@dimen/dp_78"
+                    android:layout_marginBottom="@dimen/dp_50"
+                    android:layout_gravity="center|bottom"
+                    android:src="@mipmap/ic_lochi"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:gravity="center"
+                    android:textSize="@dimen/dp_28"
+                    android:textColor="@color/white"
+                    android:text="卤味"/>
+            </FrameLayout>
+            <FrameLayout
+                android:id="@+id/fl_red_wine"
+                android:layout_width="@dimen/dp_200"
+                android:layout_height="@dimen/dp_234"
+                android:layout_toRightOf="@+id/fl_lochi"
+                android:layout_below="@+id/fl_tea"
+                android:layout_marginLeft="@dimen/dp_10"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@mipmap/img_lochi_bg">
+
+                <ImageView
+                    android:id="@+id/iv_red_wine"
+                    android:layout_width="@dimen/dp_78"
+                    android:layout_height="@dimen/dp_78"
+                    android:layout_marginBottom="@dimen/dp_50"
+                    android:layout_gravity="center|bottom"
+                    android:src="@mipmap/ic_red_wine"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_30"
+                    android:gravity="center"
+                    android:textSize="@dimen/dp_28"
+                    android:textColor="@color/white"
+                    android:text="红酒"/>
+            </FrameLayout>
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>
